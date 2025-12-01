@@ -1,0 +1,359 @@
+fileFormatVersion: 2
+guid: 30012af3e9e8c554487110dbbffd7331
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 4_lightSwitch.metal
+    second: {fileID: 2100000, guid: 4d1c30d619f98c74caf722ffb0b07ee5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 4_lightSwitch.resin
+    second: {fileID: 2100000, guid: 16563a3a69076dc41857b4d54cb3f310, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Curtain.cloth
+    second: {fileID: 2100000, guid: 74ccb4fb2573946448e905159417874d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Curtain_rail.metal
+    second: {fileID: 2100000, guid: 8014dbf3ab2273346af85fac5bdc90ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Curtain_rail.resin
+    second: {fileID: 2100000, guid: 17b0a7a1d2bb8e34fa4641f228f9d45f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bagLocker.wood
+    second: {fileID: 2100000, guid: 2ef7c7c1d283edd47a784ee314af86ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackboardEraser.band
+    second: {fileID: 2100000, guid: 6981aab679db8104f9bb919a0a368b7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackboardEraser.body
+    second: {fileID: 2100000, guid: 69fb7fa63571b7f47b5000d74a7930c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackboardEraser.fabric
+    second: {fileID: 2100000, guid: 667586a1849258248ac280edff1e92b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackboardEraser.rivet
+    second: {fileID: 2100000, guid: 3229c328f45110d44bf2b3d9c778c44f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bulletinBoard
+    second: {fileID: 2100000, guid: 0d80d621d1158d24da83d117555132d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bulletinBoard.frame
+    second: {fileID: 2100000, guid: a6137df4bcdfe8c48acb2998087eee2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: classRoom.floor
+    second: {fileID: 2100000, guid: 86fceb99aecd1284f9c51f29bdd103c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: classRoom.wallpaper
+    second: {fileID: 2100000, guid: 9a2d58a4aa38c14469cbe6e5d2978bdb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: classRoom.window.glass
+    second: {fileID: 2100000, guid: c375f25e90c81994380c30415aadcc45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: classRoom.window.sash
+    second: {fileID: 2100000, guid: 939060c442cbb7a449ee4186c65cc5db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: classRoom.window.woodFrame
+    second: {fileID: 2100000, guid: 5777a757db1276c459c475cf5aba20fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: classroom.door.frame
+    second: {fileID: 2100000, guid: 80f326e38d1e84e4ca0c81a68b1edff9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: classroom.door.glass
+    second: {fileID: 2100000, guid: ddf8d4ca5abcc0040ae7e4ecd08b1ecc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: classroom.door.handle
+    second: {fileID: 2100000, guid: 191e1c4593e009e4c928305df6aa2f62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: classroom.plate.base
+    second: {fileID: 2100000, guid: 7f4bc2c7f05f744468cf38a56d62c926, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: classroom.plate.name
+    second: {fileID: 2100000, guid: fb6c6bd1b0e5a644a986a3829a92575c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: classroom.poster
+    second: {fileID: 2100000, guid: b92b21a50801c694eb5c0fce8e682533, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fluorescent.T10
+    second: {fileID: 2100000, guid: b7d16f9f5c9bf4747b60ec81cc9c6fee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fluorescent.T10.body
+    second: {fileID: 2100000, guid: 117729e35a5e5c041bf97e55e3f326ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kokuban
+    second: {fileID: 2100000, guid: e8d16c33159de7e48aaf6214f8253ec6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kokuban.metal
+    second: {fileID: 2100000, guid: ffea7c7666d9e5d4d8b205daabc82183, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kokubankeshi.Cleaner.body
+    second: {fileID: 2100000, guid: a09f481cd930eed40802509f1a607426, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kokubankeshi.Cleaner.sw
+    second: {fileID: 2100000, guid: 1f4b13db5cb33f643886a48ff54aae50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kokubankeshi.Cleaner.top
+    second: {fileID: 2100000, guid: 166daf8bd015cb245acb4d3e839be61e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kyotaku.foot
+    second: {fileID: 2100000, guid: 515f11c53ba4ae548929c951643dc5e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kyotaku.steel
+    second: {fileID: 2100000, guid: 10909d86a43c8cf448670ff7d2b6b446, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kyoudan
+    second: {fileID: 2100000, guid: 18c3229bf6702124784d87bbe3fae827, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kyoutaku.top
+    second: {fileID: 2100000, guid: 1066b2d150bfb104696e3dd337903ca0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: schioolClock.secondHand
+    second: {fileID: 2100000, guid: a235cec386e18c14daa5a15787b56494, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: school.hallway.floor
+    second: {fileID: 2100000, guid: e74899dcc1ce1b441a9e3711d9f14d92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: schoolClock.Hand
+    second: {fileID: 2100000, guid: be7edb3e43621284ebec2f8dbc0e601c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: schoolClockFace
+    second: {fileID: 2100000, guid: e2c9c43211030b1469e5a340c0f1006b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: schoolClockFace.glass
+    second: {fileID: 2100000, guid: 71c31d38f4751af4aac6d2c956986f0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: schoolDesk.foot
+    second: {fileID: 2100000, guid: 0cafa28d61e45e748abf4cad40b96eb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: schoolDesk.foot.rubber
+    second: {fileID: 2100000, guid: a912455f82931904a94e253e1a24122f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: schoolDesk.shelf
+    second: {fileID: 2100000, guid: 0b8358c558f27df45b56661dbedff2d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: schoolDesk.top.chalk
+    second: {fileID: 2100000, guid: 0d527b68ccc692845b24ceb9be39b89d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: schoolDesk.topside
+    second: {fileID: 2100000, guid: ca52f65fd6fe10a4a828e516f24340d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: school_Speaker.Grill
+    second: {fileID: 2100000, guid: b9cd0c9255873014e9fc669bc8a662b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: school_Speaker.black
+    second: {fileID: 2100000, guid: 9cc35988ea1fcb54c8017cb8c87b10ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: school_Speaker.body
+    second: {fileID: 2100000, guid: 8ce2a1181e4752d4aae08b4fa552ca72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: schooleDesk.hook.001
+    second: {fileID: 2100000, guid: 142fd3170ca13e044a36100a91520ec2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: steelLocker.handle
+    second: {fileID: 2100000, guid: 2f6353863bcbf7246be99f7c50fb2d24, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: steelLocker.steel
+    second: {fileID: 2100000, guid: 5b9e8abaca98eca4c93c68c7243151e7, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
