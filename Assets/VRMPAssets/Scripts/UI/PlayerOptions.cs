@@ -47,7 +47,9 @@ namespace XRMultiplayer
         [Header("Player Options")]
         [SerializeField] Vector2 m_MinMaxMoveSpeed = new Vector2(2.0f, 10.0f);
         [SerializeField] Vector2 m_MinMaxTurnAmount = new Vector2(15.0f, 180.0f);
+
         [SerializeField] float m_SnapTurnUpdateAmount = 15.0f;
+        [SerializeField] float m_DebounceTime = 0.2f;
 
         VoiceChatManager m_VoiceChatManager;
         DynamicMoveProvider m_MoveProvider;
@@ -61,6 +63,10 @@ namespace XRMultiplayer
             m_VoiceChatManager = FindFirstObjectByType<VoiceChatManager>();
             m_MoveProvider = FindFirstObjectByType<DynamicMoveProvider>();
             m_TurnProvider = FindFirstObjectByType<SnapTurnProvider>();
+            if (m_TurnProvider != null)
+            {
+                m_TurnProvider.debounceTime = m_DebounceTime;
+            }
             m_TunnelingVignetteController = FindFirstObjectByType<UnityEngine.XR.Interaction.Toolkit.Locomotion.Comfort.TunnelingVignetteController>();
             if (m_TunnelingVignetteController != null)
                 m_TunnelingVignetteController.gameObject.SetActive(false);
