@@ -8,6 +8,13 @@
       "when": 1765720177146,
       "tag": "0000_colossal_owl",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1765727894366,
+      "tag": "0001_bouncy_emma_frost",
+      "breakpoints": true
     }
   ]
 }
