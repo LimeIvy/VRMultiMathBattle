@@ -2,9 +2,11 @@ import { OpenAPIHono } from "@hono/zod-openapi";
 import { cors } from "hono/cors";
 import { swaggerUI } from "@hono/swagger-ui";
 import problemsRoutes from "./routes/problems";
+import gradeRoutes from "./routes/grade";
 
 type Bindings = {
   DB: D1Database;
+  GEMINI_API_KEY: string;
 };
 
 const app = new OpenAPIHono<{ Bindings: Bindings }>();
@@ -23,6 +25,9 @@ app.get("/hello", (c) => {
 
 // Problems エンドポイントをマウント
 app.route("/", problemsRoutes);
+
+// Grade エンドポイントをマウント
+app.route("/", gradeRoutes);
 
 // OpenAPI JSON エンドポイント
 app.doc("/openapi.json", {
