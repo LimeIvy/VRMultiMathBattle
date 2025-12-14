@@ -2,6 +2,7 @@ import { OpenAPIHono } from "@hono/zod-openapi";
 import { drizzle } from "drizzle-orm/d1";
 import { createRoute } from "@hono/zod-openapi";
 import { z } from "@hono/zod-openapi";
+import { sql } from "drizzle-orm";
 import {
   createProblemSchema,
   ProblemSchema,
@@ -75,6 +76,53 @@ problemsApp.openapi(createProblemRoute, async (c) => {
     .values({ question, correctAnswer, difficulty, category })
     .returning();
   return c.json(newProblem[0], 201);
+});
+
+// GET /problems/random エンドポイント: ランダムな問題を1つ取得
+const getRandomProblemRoute = createRoute({
+  method: "get",
+  path: "/problems/random",
+  tags: ["Problems"],
+  summary: "ランダムな問題を取得",
+  description: "データベースからランダムに1つの問題を取得します",
+  responses: {
+    200: {
+      content: {
+        "application/json": {
+          schema: ProblemSchema,
+        },
+      },
+      description: "ランダムに選択された問題",
+    },
+    404: {
+      content: {
+        "application/json": {
+          schema: z.object({
+            error: z.string(),
+          }),
+        },
+      },
+      description: "問題が見つかりません",
+    },
+  },
+});
+
+problemsApp.openapi(getRandomProblemRoute, async (c) => {
+  const db = drizzle(c.env.DB);
+  
+  // SQLiteでランダムな1行を取得
+  const result = await db
+    .select()
+    .from(problemsTable)
+    .orderBy(sql`RANDOM()`)
+    .limit(1)
+    .all();
+
+  if (result.length === 0) {
+    return c.json({ error: "問題が見つかりません" }, 404);
+  }
+
+  return c.json(result[0], 200);
 });
 
 export default problemsApp;
