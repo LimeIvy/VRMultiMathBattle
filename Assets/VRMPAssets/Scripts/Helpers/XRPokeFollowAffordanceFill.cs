@@ -161,19 +161,25 @@ namespace XRMultiplayer
         /// </summary>
         protected void Start()
         {
-            if (m_PokeFollowTransform != null)
-            {
-                m_InitialPosition = m_PokeFollowTransform.localPosition;
-                m_MaxDistance = m_MaxDistance > 0f ? Mathf.Min(m_InitialPosition.magnitude, m_MaxDistance) : m_InitialPosition.magnitude;
-                m_BindingsGroup.AddBinding(m_TransformTweenableVariable.Subscribe(OnTransformTweenableVariableUpdated));
-                m_BindingsGroup.AddBinding(m_PokeStrengthTweenableVariable.Subscribe(OnPokeStrengthChanged));
-                m_BindingsGroup.AddBinding(m_PokeDataProvider.pokeStateData.SubscribeAndUpdate(OnPokeStateDataUpdated));
-            }
-            else
+            if (m_PokeFollowTransform == null)
             {
                 enabled = false;
                 Debug.LogWarning($"Missing Poke Follow Transform assignment on {this}. Disabling component.", this);
+                return;
             }
+
+            if (m_PokeDataProvider == null)
+            {
+                enabled = false;
+                Debug.LogWarning($"Missing IPokeStateDataProvider in parent hierarchy on {this}. Disabling component.", this);
+                return;
+            }
+
+            m_InitialPosition = m_PokeFollowTransform.localPosition;
+            m_MaxDistance = m_MaxDistance > 0f ? Mathf.Min(m_InitialPosition.magnitude, m_MaxDistance) : m_InitialPosition.magnitude;
+            m_BindingsGroup.AddBinding(m_TransformTweenableVariable.Subscribe(OnTransformTweenableVariableUpdated));
+            m_BindingsGroup.AddBinding(m_PokeStrengthTweenableVariable.Subscribe(OnPokeStrengthChanged));
+            m_BindingsGroup.AddBinding(m_PokeDataProvider.pokeStateData.SubscribeAndUpdate(OnPokeStateDataUpdated));
         }
 
         /// <summary>

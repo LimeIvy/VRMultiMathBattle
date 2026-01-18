@@ -51,15 +51,8 @@ wrangler d1 migrations apply DB --remote
 ### 4. 初期データの投入（オプション）
 
 ```bash
-# サンプル問題を追加
-curl -X POST http://localhost:8787/problems \
-  -H "Content-Type: application/json" \
-  -d '{
-    "question": "2 + 2は？",
-    "correctAnswer": "4",
-    "difficulty": 1,
-    "category": "算数"
-  }'
+# シードSQLを投入（ローカル）
+npm run seed:local
 ```
 
 ## 開発
@@ -75,6 +68,23 @@ bun run dev
 ### Swagger UIでAPIをテスト
 
 ブラウザで `http://localhost:8787/docs` を開いてください。
+
+### 統合テスト（Unity想定のAPI疎通）
+
+```bash
+# 問題APIの疎通とランダム取得の確認
+npm run test:integration
+```
+
+採点APIも含めてテストする場合：
+
+```bash
+# 画像はBase64(JPEG/PNG)を用意して環境変数に設定
+# PowerShell
+$env:RUN_GRADE_TEST="true"
+$env:GRADE_IMAGE_BASE64="your-base64-here"
+npm run test:integration
+```
 
 ### 主要エンドポイント
 

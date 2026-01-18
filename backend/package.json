@@ -4,7 +4,10 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "seed:local": "wrangler d1 execute vr-multi-math-battle-db --local --file src/seed.sql",
+    "seed:remote": "wrangler d1 execute vr-multi-math-battle-db --remote --file src/seed.sql",
+    "test:integration": "node ./scripts/integration-test.mjs"
   },
   "dependencies": {
     "@hono/swagger-ui": "^0.5.2",
